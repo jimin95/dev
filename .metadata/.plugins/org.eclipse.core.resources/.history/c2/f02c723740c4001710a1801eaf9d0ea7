@@ -1,0 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<jsp:forward page="/sample/openSampleList.do"/>
+
+
+출처: http://addio3305.tistory.com/43 [흔한 개발자의 개발 노트]

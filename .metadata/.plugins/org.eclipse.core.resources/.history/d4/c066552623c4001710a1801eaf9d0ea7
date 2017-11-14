@@ -1,0 +1,12 @@
+package first.common.logger;
+
+import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+
+import com.mysql.jdbc.log.Log;
+import com.mysql.jdbc.log.LogFactory;
+
+public class LoggerInterceptor extends HandlerInterceptorAdapter{
+	protected Log log = LogFactory.getLog(LoggerInterceptor.class);
+
+	
+}
