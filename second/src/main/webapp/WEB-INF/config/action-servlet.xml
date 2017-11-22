@@ -22,12 +22,12 @@
 	</beans:bean> -->
 	
 <!-- <context:component-scan base-package="com.company.first" /> -->
-	<context:component-scan base-package="first" />
+	<context:component-scan base-package="second" />
 	
 	<!-- CustomMapArgumentResolver - 컨트롤러로 들어가기 전에 파라미터를 정제할 수 있는 클래스 -->
     <mvc:annotation-driven>
         <mvc:argument-resolvers>
-            <bean class="first.common.resolver.CustomMapArgumentResolver"></bean>      
+            <bean class="second.common.resolver.CustomMapArgumentResolver"></bean>      
         </mvc:argument-resolvers>
     </mvc:annotation-driven>
 	
@@ -35,7 +35,7 @@
 	<mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
-            <bean id="loggerInterceptor" class="first.common.logger.LoggerInterceptor"></bean>
+            <bean id="loggerInterceptor" class="second.common.logger.LoggerInterceptor"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
 	

@@ -1,4 +1,4 @@
-package first.sample.service;
+package second.sample.service;
 
 import java.util.List;
 import java.util.Map;
@@ -7,7 +7,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import first.sample.dao.SampleDAO;
+import second.sample.dao.SampleDAO;
 
 @Service("sampleService")
 public class SampleServiceImpl implements SampleService{

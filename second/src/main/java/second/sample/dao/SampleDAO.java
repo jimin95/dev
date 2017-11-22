@@ -1,11 +1,11 @@
-package first.sample.dao;
+package second.sample.dao;
 
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Repository;
 
-import first.common.dao.AbstractDAO;
+import second.common.dao.AbstractDAO;
 
 @Repository("sampleDAO")
 public class SampleDAO extends AbstractDAO{

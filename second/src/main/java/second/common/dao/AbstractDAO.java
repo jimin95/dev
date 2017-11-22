@@ -1,4 +1,4 @@
-package first.common.dao;
+package second.common.dao;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package first.sample.controller;
+package second.sample.controller;
 
 import java.util.Iterator;
 import java.util.List;
@@ -12,8 +12,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import first.common.common.CommandMap;
-import first.sample.service.SampleService;
+import second.common.common.CommandMap;
+import second.sample.service.SampleService;
 
 @Controller
 public class SampleController {
