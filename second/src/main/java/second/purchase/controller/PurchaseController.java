@@ -1,4 +1,4 @@
-package second.purchase.controller;
+/*package second.purchase.controller;
 
 import java.util.Iterator;
 import java.util.List;
@@ -70,3 +70,4 @@ public class PurchaseController {
 	}
 
 }
+*/

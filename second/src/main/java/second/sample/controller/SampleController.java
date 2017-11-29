@@ -1,4 +1,4 @@
-package second.sample.controller;
+/*package second.sample.controller;
 
 import java.util.Iterator;
 import java.util.List;
@@ -70,3 +70,4 @@ public class SampleController {
 	}
 
 }
+*/

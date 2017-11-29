@@ -1,4 +1,4 @@
-package second.purchase.service;
+/*package second.purchase.service;
 
 import java.util.List;
 import java.util.Map;
@@ -26,3 +26,4 @@ public class PurchaseServiceImpl implements PurchaseService{
 	}
 
 }
+*/

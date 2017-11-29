@@ -1,4 +1,4 @@
-package second.sample.dao;
+/*package second.sample.dao;
 
 import java.util.List;
 import java.util.Map;
@@ -22,3 +22,4 @@ public class SampleDAO extends AbstractDAO{
 	
 	
 }
+*/

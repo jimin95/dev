@@ -1,4 +1,4 @@
-package second.rental2.service;
+/*package second.rental2.service;
 
 import java.util.List;
 import java.util.Map;
@@ -26,3 +26,4 @@ public class Rental2ServiceImpl implements Rental2Service{
 	}
 
 }
+*/

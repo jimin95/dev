@@ -1,4 +1,4 @@
-package second.division.service;
+/*package second.division.service;
 
 import java.util.List;
 import java.util.Map;
@@ -10,3 +10,4 @@ public interface DivisionService {
 	void insertBoard(Map<String, Object> map) throws Exception;
 
 }
+*/

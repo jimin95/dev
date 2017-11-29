@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import second.common.dao.AbstractDAO;
 
-@Repository("sampleDAO")
+@Repository("userDAO")
 public class UserDAO extends AbstractDAO{
 	
 	@SuppressWarnings("unchecked")

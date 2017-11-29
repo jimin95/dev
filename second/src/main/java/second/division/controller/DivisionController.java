@@ -1,4 +1,4 @@
-package second.division.controller;
+/*package second.division.controller;
 
 import java.util.Iterator;
 import java.util.List;
@@ -70,3 +70,4 @@ public class DivisionController {
 	}
 
 }
+*/

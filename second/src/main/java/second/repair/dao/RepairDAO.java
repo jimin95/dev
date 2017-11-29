@@ -1,4 +1,4 @@
-package second.repair.dao;
+/*package second.repair.dao;
 
 import java.util.List;
 import java.util.Map;
@@ -22,3 +22,4 @@ public class RepairDAO extends AbstractDAO{
 	
 	
 }
+*/

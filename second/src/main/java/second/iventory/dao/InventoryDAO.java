@@ -1,4 +1,4 @@
-package second.iventory.dao;
+/*package second.iventory.dao;
 
 import java.util.List;
 import java.util.Map;
@@ -22,3 +22,4 @@ public class InventoryDAO extends AbstractDAO{
 	
 	
 }
+*/

@@ -1,4 +1,4 @@
-package second.rental2.controller;
+/*package second.rental2.controller;
 
 import java.util.Iterator;
 import java.util.List;
@@ -70,3 +70,4 @@ public class Rental2Controller {
 	}
 
 }
+*/

@@ -1,4 +1,4 @@
-package second.supplies.dao;
+/*package second.supplies.dao;
 
 import java.util.List;
 import java.util.Map;
@@ -22,3 +22,4 @@ public class SuppliesDAO extends AbstractDAO{
 	
 	
 }
+*/

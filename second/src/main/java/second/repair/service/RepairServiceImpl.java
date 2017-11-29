@@ -1,4 +1,4 @@
-package second.repair.service;
+/*package second.repair.service;
 
 import java.util.List;
 import java.util.Map;
@@ -26,3 +26,4 @@ public class RepairServiceImpl implements RepairService{
 	}
 
 }
+*/

@@ -1,4 +1,4 @@
-package second.rental2.dao;
+/*package second.rental2.dao;
 
 import java.util.List;
 import java.util.Map;
@@ -22,3 +22,4 @@ public class Rental2DAO extends AbstractDAO{
 	
 	
 }
+*/

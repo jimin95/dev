@@ -1,4 +1,4 @@
-package second.rental1.service;
+/*package second.rental1.service;
 
 import java.util.List;
 import java.util.Map;
@@ -10,3 +10,4 @@ public interface Rental1Service {
 	void insertBoard(Map<String, Object> map) throws Exception;
 
 }
+*/

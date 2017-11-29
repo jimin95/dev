@@ -13,24 +13,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import second.common.common.CommandMap;
-import second.sample.service.SampleService;
+import second.user.service.UserService;
 
 @Controller
 public class UserController {
 	Logger log = Logger.getLogger(this.getClass());
 	
-    @Resource(name="sampleService")
-    private SampleService sampleService;
+    @Resource(name="userService")
+    private UserService userService;
 
 	//인터셉터 및 기본 컨트롤러
-	@RequestMapping(value="/sample/openBoardList.do")
-	public ModelAndView openSampleList(Map<String,Object> commandMap) throws Exception{
-        ModelAndView mv = new ModelAndView("/sample/boardList");
+	@RequestMapping(value="/user/login.do")
+	public ModelAndView login(Map<String,Object> commandMap) throws Exception{
+        ModelAndView mv = new ModelAndView("/inventory/inventoryList");
         //log.debug("인터셉터 테스트");
         //System.out.println(commandMap);
-        List<Map<String, Object>> list = sampleService.selectBoardList(commandMap);
-        mv.addObject("list", list);
-        //System.out.println(list);
+        
+        
+        //List<Map<String, Object>> list = sampleService.selectBoardList(commandMap);
+        //mv.addObject("list", list);
+        
         return mv;
     }
 	
@@ -38,6 +40,7 @@ public class UserController {
 	//MapArguemtResolver를 등록하지 않았다면, 컨트롤러에서 request.getParameter 메서드 등을 이용하여 하나씩 가져와야 함
 	@RequestMapping(value="/sample/testMapArgumentResolver.do")
 	public ModelAndView testMapArgumentResolver(CommandMap commandMap) throws Exception{
+		System.out.println("여기 옴");
 	    ModelAndView mv = new ModelAndView("");
 	     
 	    if(commandMap.isEmpty() == false){
@@ -64,7 +67,7 @@ public class UserController {
 	public ModelAndView insertBoard(CommandMap commandMap) throws Exception{
 	    ModelAndView mv = new ModelAndView("redirect:/sample/openBoardList.do");
 	     
-	    sampleService.insertBoard(commandMap.getMap());
+	    userService.insertBoard(commandMap.getMap());
 	     
 	    return mv;
 	}

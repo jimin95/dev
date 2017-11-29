@@ -1,4 +1,4 @@
-package second.purchase.dao;
+/*package second.purchase.dao;
 
 import java.util.List;
 import java.util.Map;
@@ -22,3 +22,4 @@ public class PurchaseDAO extends AbstractDAO{
 	
 	
 }
+*/

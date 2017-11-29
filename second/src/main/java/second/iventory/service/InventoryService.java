@@ -1,4 +1,4 @@
-package second.iventory.service;
+/*package second.iventory.service;
 
 import java.util.List;
 import java.util.Map;
@@ -10,3 +10,4 @@ public interface InventoryService {
 	void insertBoard(Map<String, Object> map) throws Exception;
 
 }
+*/

@@ -1,4 +1,4 @@
-package second.sample.service;
+/*package second.sample.service;
 
 import java.util.List;
 import java.util.Map;
@@ -10,3 +10,4 @@ public interface SampleService {
 	void insertBoard(Map<String, Object> map) throws Exception;
 
 }
+*/

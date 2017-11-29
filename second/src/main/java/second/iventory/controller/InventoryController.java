@@ -1,4 +1,4 @@
-package second.iventory.controller;
+/*package second.iventory.controller;
 
 import java.util.Iterator;
 import java.util.List;
@@ -70,3 +70,4 @@ public class InventoryController {
 	}
 
 }
+*/

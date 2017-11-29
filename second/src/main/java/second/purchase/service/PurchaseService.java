@@ -1,4 +1,4 @@
-package second.purchase.service;
+/*package second.purchase.service;
 
 import java.util.List;
 import java.util.Map;
@@ -10,3 +10,4 @@ public interface PurchaseService {
 	void insertBoard(Map<String, Object> map) throws Exception;
 
 }
+*/

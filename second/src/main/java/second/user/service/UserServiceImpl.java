@@ -7,22 +7,22 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import second.sample.dao.SampleDAO;
+import second.user.dao.UserDAO;
 
-@Service("sampleService")
+@Service("userService")
 public class UserServiceImpl implements UserService{
 
-	@Resource(name="sampleDAO")
-	private SampleDAO sampleDAO;
+	@Resource(name="userDAO")
+	private UserDAO userDAO;
 	
 	@Override
 	public List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception {
-		return sampleDAO.selectBoardList(map);
+		return userDAO.selectBoardList(map);
 	}
 	
 	@Override
 	public void insertBoard(Map<String, Object> map) throws Exception {
-	    sampleDAO.insertBoard(map);
+	    userDAO.insertBoard(map);
 	}
 
 }

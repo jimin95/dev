@@ -1,4 +1,4 @@
-package second.iventory.service;
+/*package second.iventory.service;
 
 import java.util.List;
 import java.util.Map;
@@ -26,3 +26,4 @@ public class InventoryServiceImpl implements InventoryService{
 	}
 
 }
+*/
