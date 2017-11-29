@@ -9,39 +9,10 @@
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
 		<java-version>1.8</java-version>
-		<org.springframework-version>4.3.3.RELEASE</org.springframework-version>
+		<org.springframework-version>5.0.2.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.7.3</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
-    <repositories>
-    	<repository>
-            <id>egovframe</id>
-            <url>http://www.egovframe.go.kr/maven/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    
-        <repository>
-            <id>mvn2</id>
-            <url>http://repo1.maven.org/maven2/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-         
-        <repository>
-             <id>oracle</id>
-             <name>ORACLE JDBC Repository</name>
-             <url>http://mesir.googlecode.com/svn/trunk/mavenrepo</url>
-        </repository>
-    </repositories>
      
     <dependencies>
         <!-- Spring -->
@@ -56,12 +27,6 @@
                     <artifactId>commons-logging</artifactId>
                  </exclusion>
             </exclusions>
-        </dependency>
-         
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${org.springframework-version}</version>
         </dependency>
          
         <dependency>
@@ -117,13 +82,13 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.2.2</version>
+            <version>3.3.0</version>
         </dependency>
          
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
-            <version>1.2.0</version>
+            <version>1.2.3</version>
         </dependency>
          
         <!-- DBCP -->
@@ -148,12 +113,12 @@
         </dependency> -->
          
         <!-- Oracle -->
-        <dependency>
+        <!-- <dependency>
     		<groupId>com.oracle</groupId>
     		<artifactId>ojdbc6</artifactId>
     		<version>6</version>
 		</dependency>
-
+ -->
  
         <!-- AspectJ -->
         <dependency>
@@ -272,13 +237,6 @@
             <version>1.10</version>
         </dependency>
          
-        <!-- EgovProperty -->
-        <dependency>
-            <groupId>egovframework.rte</groupId>
-            <artifactId>egovframework.rte.fdl.property</artifactId> 
-            <version>2.7.0</version>
-        </dependency>
-         
         <!-- Log4j -->
         <dependency>
             <groupId>log4j</groupId>
@@ -349,7 +307,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.5.1</version>
+                <version>3.1</version>
                 <configuration>
                     <source>${java-version}</source>
                     <target>${java-version}</target>
