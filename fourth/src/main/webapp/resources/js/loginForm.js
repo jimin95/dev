@@ -21,7 +21,7 @@ $(function() {
 				
 				if(data.result == "LOGIN_SUCCESS"){
 					console.log("[로그인 성공]");
-					location.href = "../WEB-INF/views/ist/istList.jsp";
+					location.href = "WEB-INF/views/ist/istList.jsp";
 				}else{
 					console.log("[로그인 실패]");
 					location.href = "../WEB-INF/views/login/loginForm.jsp";

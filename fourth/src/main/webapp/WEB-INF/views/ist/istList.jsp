@@ -5,6 +5,7 @@
 <head>
 <%@ include file="/WEB-INF/include/include-header.jspf"%>
 </head>
+
 <body>
 	<div id="istModal" class="modal fade" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document" style="width: 1000px;">
@@ -57,3 +58,4 @@
 		</div>
 	</div>
 </body>
+</html>

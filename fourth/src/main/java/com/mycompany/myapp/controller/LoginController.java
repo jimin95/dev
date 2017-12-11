@@ -20,7 +20,7 @@ public class LoginController {
 	@Autowired
 	private LoginService loginService;
 	
-	@RequestMapping(value="/", method=RequestMethod.GET)
+	@RequestMapping(value="/", method=RequestMethod.POST)
 	public String login(String login_id, String login_pw, HttpSession session, Model model){
 		logger.info("login_id: "+login_id);
 		logger.info("login_pw: "+login_pw);
@@ -30,18 +30,18 @@ public class LoginController {
 		if(result == LoginService.LOGIN_FAIL_ISTPASSWORD){
 			model.addAttribute("result", "LOGIN_FAIL_ISTPASSWORD");
 			logger.info("[패스워드 오류]");
-			return "user/loginResult";
+			return "login/loginResult";
 		
 		}else if(result == LoginService.LOGIN_FAIL_ISTUSERID){
 			model.addAttribute("result", "LOGIN_FAIL_ISTUSERID");
 			logger.info("[아이디 오류]");
-			return "user/loginResult";
+			return "login/loginResult";
 		
 		}else{
 			model.addAttribute("result", "LOGIN_SUCCESS");
 			session.setAttribute("login", login_id);
 			logger.info("[로그인 성공]");
-			return "user/loginResult";
+			return "login/loginResult";
 		}
 	}
 	

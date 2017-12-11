@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 import com.mycompany.myapp.dto.Login;
 
+
 @Component
 public class LoginDao {
 	
@@ -20,7 +21,7 @@ public class LoginDao {
 	public Login selectByIstuserid(String istuserid){
 		
 		String sql = "select * from IT_INSTRUMENT_LOGIN where IST_USERID = ?";
-		
+
 		List<Login> list = jdbcTemplate.query(sql, new Object[]{istuserid}, new RowMapper<Login>(){
 
 			@Override
@@ -29,7 +30,7 @@ public class LoginDao {
 				login.setIst_userid(rs.getString("ist_userid"));
 				login.setIst_password(rs.getString("ist_password"));
 				login.setIst_email(rs.getString("ist_email"));
-				login.setIst_tel(rs.getString("ist_email"));
+				login.setIst_tel(rs.getString("ist_tel"));
 				return login;
 			}
 			
