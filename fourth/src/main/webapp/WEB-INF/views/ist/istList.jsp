@@ -7,12 +7,12 @@
 </head>
 
 <body>
-	<div id="istModal" class="modal fade" tabindex="-1" role="dialog">
+dd
+	<!-- <div id="istModal" class="modal fade" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document" style="width: 1000px;">
 			<div class="modal-content" style="height: 700px">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
-						aria-label="Close">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 					<h4 class="modal-title">
@@ -31,9 +31,9 @@
 							</fieldset>
 						</div>
 
-						<!-- <div style="margin-top: 20px; text-align: right; width: 900px;">
+						<div style="margin-top: 20px; text-align: right; width: 900px;">
 							<a id="btnNewOrder" onclick="btnNewOrder()" type="button" class="btn btn-warning" href="#">신규 주문</a>
-						</div> -->
+						</div>
 
 						<table id="acrylic" style="width: 900px">
 							<thead>
@@ -46,7 +46,7 @@
 								</tr>
 							</thead>
 							<tbody id="orderTbody">
-								<!-- jQuery로 채워지는 리스트 내용 -->
+								jQuery로 채워지는 리스트 내용
 							</tbody>
 						</table>
 						
@@ -56,6 +56,6 @@
 				<div class="modal-footer" style="text-align: center;"></div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </body>
 </html>

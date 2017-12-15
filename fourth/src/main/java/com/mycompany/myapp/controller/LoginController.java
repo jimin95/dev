@@ -20,7 +20,7 @@ public class LoginController {
 	@Autowired
 	private LoginService loginService;
 	
-	@RequestMapping(value="/login", method=RequestMethod.POST)
+	/*@RequestMapping(value="/login", method=RequestMethod.POST)
 	public String login(String ist_userid, String ist_password, HttpSession session, Model model){
 		logger.info("login_id: "+ist_userid);
 		logger.info("login_pw: "+ist_password);
@@ -43,7 +43,30 @@ public class LoginController {
 			model.addAttribute("result", "LOGIN_SUCCESS");
 			return "ist/istList";
 		}
+	}*/
+	
+	@RequestMapping(value="/login", method=RequestMethod.POST)
+	public String login(String ist_userid, String ist_password, HttpSession session, Model model){
+		logger.info("login_id: "+ist_userid);
+		logger.info("login_pw: "+ist_password);
+		
+		int result = loginService.login(ist_userid, ist_password);
+		
+		if(result == LoginService.LOGIN_FAIL_ISTPASSWORD){
+			logger.info("[패스워드 오류]");
+			model.addAttribute("result", "LOGIN_FAIL_ISTPASSWORD");
+			return "login/loginForm";
+		
+		}else if(result == LoginService.LOGIN_FAIL_ISTUSERID){
+			logger.info("[아이디 오류]");
+			model.addAttribute("result", "LOGIN_FAIL_ISTUSERID");
+			return "login/loginForm";
+		
+		}else{
+			session.setAttribute("login", ist_userid);
+			logger.info("[로그인 성공]");
+			model.addAttribute("result", "LOGIN_SUCCESS");
+			return "redirect:/ist/userList";
+		}
 	}
-	
-	
 }

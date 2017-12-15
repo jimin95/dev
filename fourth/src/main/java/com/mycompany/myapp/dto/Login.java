@@ -1,6 +1,7 @@
 package com.mycompany.myapp.dto;
 
-public class Login {
+
+public class Login {//로그인
 	
 	private String ist_userid;//로그인 ID
 	private String ist_password;//로그인 PW

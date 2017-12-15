@@ -24,13 +24,13 @@ $(function() {
 					location.href = "views/ist/istList.jsp";
 				}else{
 					console.log("[로그인 실패]");
-					location.href = "views/ist/istList.jsp";
+					location.href = "views/ist/istList.jsp";//이 부분 추구, 수정해야함
 				}
 			}
 		});
 		
 	});
-	
+	//-------------------------------------
 	$("#btnSign").on("click", function() {
 		console.log("[signForm] 자바스크립트 플로우");
 		
