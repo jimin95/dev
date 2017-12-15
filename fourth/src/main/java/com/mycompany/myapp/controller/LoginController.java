@@ -13,35 +13,35 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.mycompany.myapp.service.LoginService;
 
 @Controller
-@RequestMapping("/login")
+@RequestMapping("/loginForm")
 public class LoginController {
 	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
 	@Autowired
 	private LoginService loginService;
 	
-	@RequestMapping(value="/", method=RequestMethod.POST)
-	public String login(String login_id, String login_pw, HttpSession session, Model model){
-		logger.info("login_id: "+login_id);
-		logger.info("login_pw: "+login_pw);
+	@RequestMapping(value="/login", method=RequestMethod.POST)
+	public String login(String ist_userid, String ist_password, HttpSession session, Model model){
+		logger.info("login_id: "+ist_userid);
+		logger.info("login_pw: "+ist_password);
 		
-		int result = loginService.login(login_id, login_pw);
+		int result = loginService.login(ist_userid, ist_password);
 		
 		if(result == LoginService.LOGIN_FAIL_ISTPASSWORD){
-			model.addAttribute("result", "LOGIN_FAIL_ISTPASSWORD");
 			logger.info("[패스워드 오류]");
-			return "login/loginResult";
+			model.addAttribute("result", "LOGIN_FAIL_ISTPASSWORD");
+			return "login/loginForm";
 		
 		}else if(result == LoginService.LOGIN_FAIL_ISTUSERID){
-			model.addAttribute("result", "LOGIN_FAIL_ISTUSERID");
 			logger.info("[아이디 오류]");
-			return "login/loginResult";
+			model.addAttribute("result", "LOGIN_FAIL_ISTUSERID");
+			return "login/loginForm";
 		
 		}else{
-			model.addAttribute("result", "LOGIN_SUCCESS");
-			session.setAttribute("login", login_id);
+			session.setAttribute("login", ist_userid);
 			logger.info("[로그인 성공]");
-			return "login/loginResult";
+			model.addAttribute("result", "LOGIN_SUCCESS");
+			return "ist/istList";
 		}
 	}
 	

@@ -19,10 +19,10 @@
 						<h2>로그인 해주세요</h2>
 						<hr class="colorgraph">
 						<div class="form-group">
-							<input type="text" id="user_id" name="user_id" class="form-control input-lg" placeholder="아이디">
+							<input type="text" id="ist_userid" name="ist_userid" class="form-control input-lg" placeholder="아이디">
 						</div>
 						<div class="form-group">
-							<input type="password" id="user_pw" name="user_pw" class="form-control input-lg" placeholder="비밀번호">
+							<input type="password" id="ist_password" name="ist_password" class="form-control input-lg" placeholder="비밀번호">
 						</div>
 						
 						

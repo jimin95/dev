@@ -2,29 +2,29 @@ $(function() {
 	$("#btnLogin").on("click", function() {
 		console.log("[loginForm] 자바스크립트 플로우");
 		
-		var login_id = $("#loginForm #user_id").val();
-		var login_pw = $("#loginForm #user_pw").val();
+		var ist_userid = $("#loginForm #ist_userid").val();
+		var ist_password = $("#loginForm #ist_password").val();
 		
-		console.log(login_id);
-		console.log(login_pw);
+		console.log(ist_userid);
+		console.log(ist_password);
 		
 		$.ajax({
-			url:"login/",
+			url:"loginForm/login",
 			cache: false,
 			type: "post",
 			data: {
-				"login_id" : login_id,
-				"login_pw" : login_pw
+				"ist_userid" : ist_userid,
+				"ist_password" : ist_password
 				},
 			success: function(data){
 				console.log("[loginForm] 데이터 플로우");
 				
 				if(data.result == "LOGIN_SUCCESS"){
 					console.log("[로그인 성공]");
-					location.href = "WEB-INF/views/ist/istList.jsp";
+					location.href = "views/ist/istList.jsp";
 				}else{
 					console.log("[로그인 실패]");
-					location.href = "../WEB-INF/views/login/loginForm.jsp";
+					location.href = "views/ist/istList.jsp";
 				}
 			}
 		});

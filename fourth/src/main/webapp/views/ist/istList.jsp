@@ -7,19 +7,7 @@
 </head>
 
 <body>
-	<div id="istModal" class="modal fade" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document" style="width: 1000px;">
-			<div class="modal-content" style="height: 700px">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<h4 class="modal-title">
-						<b>All IST List</b>
-					</h4>
-				</div>
-				<div class="modal-body">
+	
 
 					<div class="wrapper" align="center">
 						<div>
@@ -31,18 +19,27 @@
 							</fieldset>
 						</div>
 
-						<!-- <div style="margin-top: 20px; text-align: right; width: 900px;">
-							<a id="btnNewOrder" onclick="btnNewOrder()" type="button" class="btn btn-warning" href="#">신규 주문</a>
-						</div> -->
+						<div style="margin-top: 20px; text-align: right; width: 900px;">
+							
+						</div>
 
 						<table id="acrylic" style="width: 900px">
 							<thead>
 								<tr>
-									<th style="width: 70px">주문번호</th>
-									<th style="width: 70px">아이디</th>
-									<th style="width: 70px">주문시간</th>
-									<th style="width: 70px">총 가격</th>
-									<th style="width: 70px">결제 방식</th>
+									<th style="width: 100px">사번</th>
+									<th style="width: 100px">장비번호</th>
+									<th style="width: 100px">부서그룹</th>
+									<th style="width: 100px">사용자</th>
+									<th style="width: 100px">직책명</th>
+									<th style="width: 100px">지역</th>
+									<th style="width: 100px">장비구분</th>
+									<th style="width: 100px">장비모델</th>
+									<th style="width: 100px">시리얼</th>
+									<th style="width: 100px">구입일</th>
+									<th style="width: 100px">설치일</th>
+									<th style="width: 100px">사용구분</th>
+									<th style="width: 100px">주소</th>
+									<th style="width: 100px">비고</th>
 								</tr>
 							</thead>
 							<tbody id="orderTbody">
@@ -52,10 +49,6 @@
 						
 						
 					</div>
-				</div>
-				<div class="modal-footer" style="text-align: center;"></div>
-			</div>
-		</div>
-	</div>
+				
 </body>
 </html>
