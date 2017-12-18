@@ -66,7 +66,7 @@ public class LoginController {
 			session.setAttribute("login", ist_userid);
 			logger.info("[로그인 성공]");
 			model.addAttribute("result", "LOGIN_SUCCESS");
-			return "redirect:/ist/userList";
+			return "redirect:/ist/istUserList";
 		}
 	}
 }
