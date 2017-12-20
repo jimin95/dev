@@ -18,6 +18,7 @@ public class LoginDao {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
+	//로그인 사용자 ID
 	public Login selectByIstuserid(String istuserid){
 		
 		String sql = "select * from IT_INSTRUMENT_LOGIN where IST_USERID = ?";
@@ -39,6 +40,7 @@ public class LoginDao {
 		return (list.size() != 0) ? list.get(0):null;
 	}
 	
+	//로그인 사용자 PASSWORD
 	public Login selectByIstpassword(String istpassword){
 		
 		String sql = "select * from IT_INSTRUMENT_LOGIN where IST_PASSWORD = ?";

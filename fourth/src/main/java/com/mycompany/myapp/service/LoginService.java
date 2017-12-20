@@ -21,6 +21,7 @@ public class LoginService {
 	@Autowired
 	private LoginDao loginDao;
 	
+	//·Î±×ÀÎ
 	public int login(String istuserid, String istpassword){
 		
 		Login login = loginDao.selectByIstuserid(istuserid);

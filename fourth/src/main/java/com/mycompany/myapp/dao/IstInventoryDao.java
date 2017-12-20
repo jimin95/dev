@@ -82,7 +82,7 @@ public class IstInventoryDao {
 	//1개 전산장비 재고 삽입
 	public int insertIstInventory(IstInventory istInventory) {
 		String sql = "insert into "
-				+ "IT_INSTRUMENT_INVENTORY(ist_number, ist_userid, ist_divisid, ist_pday, ist_sday, ist_quantity, ist_remark, soft_del ) "
+				+ "IT_INSTRUMENT_INVENTORY(ist_number, ist_userid, ist_divisid, ist_pday, ist_sday, ist_quantity, ist_remark, soft_del) "
 				+ "values(?,?,?,?,?,?,?,?) ";
 		
 		int row = jdbcTemplate.update(

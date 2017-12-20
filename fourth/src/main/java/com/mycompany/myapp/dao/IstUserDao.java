@@ -26,7 +26,7 @@ public class IstUserDao {
 				+ "select * "
 				+ "from(select rownum as rn, ist_userid, ist_divisid, ist_username, ist_dpt, ist_position, ist_area, ist_address, ist_retire, ist_usage, ist_remark, soft_del "
 				+ "from IT_INSTRUMENT_USER "
-				+ "where SOFT_DEL = ? order by ist_userid desc) "
+				+ "where SOFT_DEL = ? order by IST_USERID desc) "
 				+ "where rownum <= ?) "
 				+ "where rn >= ? ";
 
