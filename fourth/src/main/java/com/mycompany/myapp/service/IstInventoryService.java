@@ -46,7 +46,7 @@ public class IstInventoryService {
 	
 	//1개 전산장비 재고 삭제(소프트 딜리트 활용, 0:디폴트, 1:삭제)
 	public int removeByIstNumber(String istNumber){
-		int row = istInventoryDao.deleteIstNumber(istNumber);
+		int row = istInventoryDao.deleteByIstNumber(istNumber);
 		if(row == 1) return REMOVE_SUCCESS;
 		else return REMOVE_FAIL;
 	}

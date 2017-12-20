@@ -108,7 +108,7 @@ public class IstUserDao {
 	}
 	
 	//1개 유저 전산장비 삭제(소프트 딜리트 활용, 0:디폴트, 1:삭제)
-	public int deleteIstUser(String istuserid) {
+	public int deleteByIstUserid(String istuserid) {
 		String sql = "update IT_INSTRUMENT_USER set SOFT_DEL = ? where IST_USERID like ?";
 		int row = jdbcTemplate.update(sql, 1, istuserid);
 		return row;

@@ -45,8 +45,8 @@ public class IstUserService {
 	}
 	
 	//1개 유저 전산장비 삭제(소프트 딜리트 활용, 0:디폴트, 1:삭제)
-	public int removeByIstUser(String istuserid){
-		int row = istUserDao.deleteIstUser(istuserid);
+	public int removeByIstUserid(String istuserid){
+		int row = istUserDao.deleteByIstUserid(istuserid);
 		if(row == 1) return REMOVE_SUCCESS;
 		else return REMOVE_FAIL;
 	}

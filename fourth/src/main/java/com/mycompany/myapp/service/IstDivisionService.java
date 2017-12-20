@@ -46,7 +46,7 @@ public class IstDivisionService {
 	
 	//1개 전산장비 구분 삭제(소프트 딜리트 활용, 0:디폴트, 1:삭제)
 	public int removeByIstDivision(String istDivisid){
-		int row = istDivisionDao.deleteIstDivision(istDivisid);
+		int row = istDivisionDao.deleteByIstDivisid(istDivisid);
 		if(row == 1) return REMOVE_SUCCESS;
 		else return REMOVE_FAIL;
 	}

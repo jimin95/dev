@@ -11,7 +11,7 @@ public class IstPurchase {//장비 구매
 	private Date ist_ofday;//기안일
 	private String ist_usage;//용도
 	private Date ist_oderday;//발주일
-	private Date ist_wqreday;//입고일
+	private Date ist_wareday;//입고일
 	private Date ist_sendday;//지급일
 	private int ist_purstatus;//상태ID(SEQ)
 	private int ist_quantity;//수량
@@ -19,8 +19,6 @@ public class IstPurchase {//장비 구매
 	private int ist_divisprice;//장비종류합계액
 	private int ist_totalprice;//월 구매 총액
 	private String soft_del;//소프트딜리트
-	
-	
 	public int getIst_purchid() {
 		return ist_purchid;
 	}
@@ -63,11 +61,11 @@ public class IstPurchase {//장비 구매
 	public void setIst_oderday(Date ist_oderday) {
 		this.ist_oderday = ist_oderday;
 	}
-	public Date getIst_wqreday() {
-		return ist_wqreday;
+	public Date getIst_wareday() {
+		return ist_wareday;
 	}
-	public void setIst_wqreday(Date ist_wqreday) {
-		this.ist_wqreday = ist_wqreday;
+	public void setIst_wareday(Date ist_wareday) {
+		this.ist_wareday = ist_wareday;
 	}
 	public Date getIst_sendday() {
 		return ist_sendday;
@@ -111,6 +109,8 @@ public class IstPurchase {//장비 구매
 	public void setSoft_del(String soft_del) {
 		this.soft_del = soft_del;
 	}
+	
+	
 	
 	
 }

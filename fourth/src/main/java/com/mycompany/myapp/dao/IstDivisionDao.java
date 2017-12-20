@@ -100,7 +100,7 @@ public class IstDivisionDao {
 	}
 	
 	//1개 전산장비 구분 삭제(소프트 딜리트 활용, 0:디폴트, 1:삭제)
-	public int deleteIstDivision(String istdivisid) {
+	public int deleteByIstDivisid(String istdivisid) {
 		String sql = "update IT_INSTRUMENT_DIVISION set SOFT_DEL = ? where IST_DIVISID like ?";
 		int row = jdbcTemplate.update(sql, 1, istdivisid);
 		return row;

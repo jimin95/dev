@@ -100,7 +100,7 @@ public class IstInventoryDao {
 	}
 	
 	//1개 전산장비 재고 삭제(소프트 딜리트 활용, 0:디폴트, 1:삭제)
-	public int deleteIstNumber(String istNumber) {
+	public int deleteByIstNumber(String istNumber) {
 		String sql = "update IT_INSTRUMENT_INVENTORY set SOFT_DEL = ? where IST_NUMBER like ?";
 		int row = jdbcTemplate.update(sql, 1, istNumber);
 		return row;
