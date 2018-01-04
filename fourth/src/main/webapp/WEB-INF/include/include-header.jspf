@@ -3,13 +3,23 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> 
 <html> 
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <title>fourth</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" /> -->
 
 <!-- CSS -->
+<%-- <link href="${pageContext.servletContext.contextPath}/resources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="${pageContext.servletContext.contextPath}/resources/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="${pageContext.servletContext.contextPath}/resources/css/jcarousel.css" rel="stylesheet" />
+<link href="${pageContext.servletContext.contextPath}/resources/css/flexslider.css" rel="stylesheet" />
+<link href="${pageContext.servletContext.contextPath}/resources/css/style.css" rel="stylesheet" /> --%>
+
+<!-- Theme skin -->
+<%-- <link href="${pageContext.servletContext.contextPath}/resources/skins/default.css" rel="stylesheet" /> --%>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	
 <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/resources/css/LoginForm.css" />
 <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/resources/css/SignForm.css" />
 <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/resources/css/BoardList.css" />
@@ -25,4 +35,4 @@
 
 <script type="text/javascript" src="${pageContext.servletContext.contextPath}/resources/js/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="${pageContext.servletContext.contextPath}/resources/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="${pageContext.servletContext.contextPath}/resources/js/loginForm.js"></script>
+<script type="text/javascript" src="${pageContext.servletContext.contextPath}/resources/js/login.js"></script>

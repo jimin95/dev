@@ -102,7 +102,7 @@ public class IstController {
 	//1개 유저 전산장비 삭제(소프트 딜리트 활용, 0:디폴트, 1:삭제)
 	@RequestMapping(value="/istUserAdd", method=RequestMethod.GET)
 	public String istUserDelete(String istuserid,  Model model, HttpSession session){
-		if(istUserService.removeByIstUser(istuserid) == 1){
+		if(istUserService.removeByIstUserid(istuserid) == 1){
 			model.addAttribute("Result", "1");
 		}else{
 			model.addAttribute("Result", "0");
